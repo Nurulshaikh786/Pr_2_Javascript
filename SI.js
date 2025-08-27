@@ -5,6 +5,7 @@
 
         if (P >= 500000 && T >= 10) {
             R = 9.5;
+
         }
         else if (P >= 300000 && T >= 8) {
             R = 7.5;
@@ -19,5 +20,9 @@
         let SI = P * R * T / 100;
 
         let netPrice = P + SI ;
-
-        console.log(netPrice);
+        console.log("-------------------------------------------------");
+        console.log("The amount you invested : ",P)
+        console.log("Rate of interest is : ", R);
+        console.log("Simple interest will be : ", SI);
+        console.log("After",T, "years the total amount will be : ",netPrice);
+        console.log("----------------------------------------------");
